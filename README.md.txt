@@ -6,4 +6,4 @@
 -Project : 프로젝트 진행 중 트러블 슈팅 정리 
 
 ## 블로그 
-[블로그]https://bbgiloo.tistory.com/
+[TIL 블로그](https://bbgiloo.tistory.com/)
