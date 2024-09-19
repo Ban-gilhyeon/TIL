@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/JPA.md",
+                "file": "Spring/lombok.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/JPA.md",
+                "file": "Spring/lombok.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Spring/JPA.md",
+                "file": "Spring/lombok.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/JPA.md"
+                "file": "Spring/lombok.md"
               }
             }
           }
@@ -133,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,9 +147,15 @@
   },
   "active": "b2bae9e53fc1c5e2",
   "lastOpenFiles": [
-    "Spring/Spring.md",
+    "Spring/JPA.md",
     "공부해야 될 것들.md.md",
-    "2024-09-13.md",
-    "Spring/JPA.md"
+    "Spring/images/Pasted image 20240917114538.png",
+    "project/images/Pasted image 20240911031059.png",
+    "Spring/lombok.md",
+    "project/1차 프로젝트 트러블슈팅.md",
+    "project/JpaHeadbutt 중 궁금한 내용 공부.md",
+    "project/1차 팀 프로젝트 느낀점 ...md",
+    "Spring/Spring.md",
+    "2024-09-13.md"
   ]
 }
