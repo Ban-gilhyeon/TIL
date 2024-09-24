@@ -54,3 +54,5 @@ JPA의 `Persistence`클래스가 `META-INF/persistence.xml`설정 파일을 읽�
 ```
 
 ### JPQL
+
+
