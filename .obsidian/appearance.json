@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "interfaceFontFamily": "RIDIBatang",
   "textFontFamily": "RIDIBatang",
-  "monospaceFontFamily": "D2Coding"
+  "monospaceFontFamily": "D2Coding",
+  "cssTheme": "Atom"
 }
