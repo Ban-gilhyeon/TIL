@@ -105,3 +105,8 @@ Login k = new KakaoLogin();
 
 [참고 사이트] https://refactoring.guru/ko 
 
+## 자료타입 BigDecimal
+- `BigDecimal`은 Java 언어에서 숫자를 정밀하게 저장하고 표현할 수 있는 **유일한 방법**
+- 소수점을 저장할 수 있는 가장 크기가 큰 타입인 `double`은 소수점의 정밀도에 한계가 있어 값이 유실 될 수 있음
+- java 언어에서 돈과 소수점을 다룬다면 `BigDecimal`은 선택이 아니라 필수 
+- `BigDecimal`의 유일한 단점은 **느린 속도와 기본 타입보다 조금 불편한 사용법** 
