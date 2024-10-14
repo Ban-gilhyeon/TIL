@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8332cd772c243f0c",
+        "id": "e45ceb6d23b5b8d0",
         "type": "tabs",
         "children": [
           {
-            "id": "d735450c00d2db40",
+            "id": "83e8df259ce63735",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/2차 프로젝트  공부할 내용.md",
+                "file": "실용주의 프로그래밍/1부 객체지향.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 316.5
+    "width": 299.5
   },
   "right": {
     "id": "d3e18f2c4ace486e",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/2차 프로젝트  공부할 내용.md",
+                "file": "실용주의 프로그래밍/1부 객체지향.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/2차 프로젝트  공부할 내용.md",
+                "file": "실용주의 프로그래밍/1부 객체지향.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/2차 프로젝트  공부할 내용.md"
+                "file": "실용주의 프로그래밍/1부 객체지향.md"
               }
             }
           }
@@ -146,18 +146,37 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d735450c00d2db40",
+  "active": "6cda88b4ae273164",
   "lastOpenFiles": [
+    "실용주의 프로그래밍/1부 객체지향",
     "공부해야 될 것들.md.md",
-    "project/2차 프로젝트  공부할 내용.md",
-    "Spring/모르는 어노테이션 정리.md",
+    "실용주의 프로그래밍/1부 객체지향.md",
+    "실용주의 프로그래밍",
     "Spring/JPA.md",
+    "project/2차 프로젝트 지원님 자료.md",
+    "DB/DB의 연관 관계.md",
+    "Spring/JPA- Entity Mapping.md",
+    "Spring/모르는 어노테이션, 클래스.md",
+    "Spring/JPA-JpaRepository, CrudRepositroy.md",
+    "Spring/lombok.md",
+    "Spring/IoC, DI, DL.md",
+    "Spring/헥사고날 아키텍처.md",
+    "Spring/빌더 패턴과 정적 팩토리 메소드.md",
+    "Spring/@Embedded 와 @embeddable.md",
+    "DB/images/Pasted image 20240926102735.png",
+    "DB/images/Pasted image 20240926095616.png",
+    "DB/images",
+    "DB/Index.md",
+    "DB",
+    "project/2차 프로젝트  공부한 내용.md",
+    "JAVA/Normal_Java.md",
+    "JAVA/JAVA.md",
+    "Spring/images/Pasted image 20240925004915.png",
+    "CS/images/Pasted image 20240921085428.png",
     "CS/URI 와 URL.md",
-    "Pasted image 20240921085428.png",
     "CS/Web.md",
     "CS/images/Pasted image 20240921084727.png",
     "CS/images",
-    "Spring/lombok.md",
     "Spring/images/Pasted image 20240917114538.png",
     "project/images/Pasted image 20240911031059.png",
     "project/1차 프로젝트 트러블슈팅.md",
