@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e45ceb6d23b5b8d0",
+        "id": "00e6506f692a0c12",
         "type": "tabs",
         "children": [
           {
-            "id": "83e8df259ce63735",
+            "id": "7e211061c5e7c1c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,10 +146,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "83e8df259ce63735",
+  "active": "7e211061c5e7c1c5",
   "lastOpenFiles": [
-    "실용주의 프로그래밍/제 1부 객체지향.md",
     "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
+    "실용주의 프로그래밍/제 1부 객체지향.md",
     "실용주의 프로그래밍/1부 객체지향",
     "공부해야 될 것들.md.md",
     "실용주의 프로그래밍",
