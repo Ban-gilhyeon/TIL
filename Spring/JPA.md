@@ -1,3 +1,6 @@
+[[JPA- Entity Mapping]]
+[[JPA-JpaRepository, CrudRepositroy]]
+[[JpaHeadbutt 중 궁금한 내용 공부]]
 # JPA(Java Persistence API) 
 - Java 진영에서 `ORM` 기술 표준으로 사용되는 인터페이스의 모음 
 - 관계형 데이터베이스를 사용하는 방식을 효율적(**매핑**)으로 관리할 수 있는 프레임 워크
