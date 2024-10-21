@@ -105,8 +105,51 @@ void create_new_Study2(RepetitionInfo repetitionInfoinfo) {
 	- @NullSource + @EmptySource
 	- @ValuserSource를 추가하는 어노테이션 Null, Empty 
 	- ![[Pasted image 20241021031531.png]]
-- 
-## AssertJ
+
+### 테스트 인스턴스
+```java 
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)  
+class StudyTest {  
+	int value = 1;
+    @Test  
+    void create_new_Study() {  
+       IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> new Study(-10));  
+       assertEquals("스터디 최대 참석자는 0보다 커야 합니다.",exception.getMessage());  
+       Study study = new Study(value++); // 1   
+       /*assertNotNull(study);  
+       assertEquals(StudyStatus.DRAFT, study.getStatus(), "스터디를 처음 만들면 상태 값이 DRAFT여야 함");       assertTrue(study.getLimit() > 0, "스터디 최대 참석 인원은 0보다 커야 함");*/       assertAll(  
+             () -> assertNotNull(study),  
+             () -> assertEquals(StudyStatus.DRAFT, study.getStatus(),"스터디 처음 만들면 상태 값은 DRAFT"),  
+             () -> assertTrue(study.getLimit() > 0, "스터디 참석 인원은 0보다 커야 함")  
+       );    }  
+    @DisplayName("반복 스터디 만들기")  
+    @RepeatedTest(value = 10, name = "{displayName}, {currentRepetition}/{totalRepetitions}")  
+    void create_new_Study2(RepetitionInfo repetitionInfoinfo) { 
+	   System.out.println(value++) //1
+       System.out.println("test" + repetitionInfoinfo.getCurrentRepetition() + "/" + repetitionInfoinfo.getTotalRepetitions());  
+    }
+```
+위와 같이 `StudyTest.class`에 인스턴스로 `int value = 1 `이라고 했을 때
+하위 Test 메소드에서 `value++`를 하더라도 항상 1이 출력이 됨 
+- @TestInstance(TestInstance.Lifecycle.PER_CLASS)
+	- 위와 같이 인스턴스를 공유하고 싶다면 어노테이션으로 가능
+	- BeforeAll, AfterAll의 경우 `static`이 강제되지만 위의 어노테이션을 씀으로써 강제되지 않음
+
+### 테스트 순서
+: JUnit의 로직에 따라 순서가 정해져 있긴 함
+그러나 들어나져 있지 않은 이유는 단위테스트가 순서에 의존하면 안됨 -> 단위테스트는 서로 의존X 
+- TestMethodOrder(MethodOrderer.(class))
+	- Alphanumeric
+	- OrderAnnoation
+		- @Order(숫자)의 순서대로 실행 됨, 낮은 값일 수록 우선순위 UP
+	- Random
+
+### 확장 모델
+JUnit 4의 확장 모델은 `@RunWith(Runner)`, `TestRule`, `MethodRule`
+Junit 5의 확장 모델은 단 하나, `Extension`
+
+
+### AssertJ
 -  Junit과 사용해 가독성을 높여주는 `라이브러리`로 다양한 문법을 지원함
 -  기존 Junit은 기댓값과 실제 비교 대상이 확실히 보이지 않아 잘 구분이 안됨 (isEqualTo 등 명확한 의미의 메서드로 대체 가능)
 - assertThat : Junit의 assert메소드를 다르게 적을 수 있음 (취향차이)
@@ -132,34 +175,3 @@ void create_new_Study2(RepetitionInfo repetitionInfoinfo) {
 | isLessThan(a)     | a보다 작은 값인지 검증   |
 
 
-- **HTTP 주요 응답 코드 테스트 메서드**
-
-| Code                      | MappingMethod           | Explain                              |
-| ------------------------- | ----------------------- | ------------------------------------ |
-| 200 OK                    | isOk()                  | HTTP 응답코드가 200 OK인지 검증               |
-| 201 Created               | isCreated()             | HTTP 응답코드가 201 Created 검증            |
-| 401 Bad Request           | isBadRequest()          | HTTP 응답코드가 400 BadRequest 검증         |
-| 403 Forbidden             | isForbidden()           | HTTP 응답코드가 403 Forbidden 검증          |
-| 404 Not Found             | isNotFound()            | HTTP 응답코드가 404 Not Found 검증          |
-| 4**                       | is4xxClientError()      | HTTP 응답코드가 4** 검증                    |
-| 500 Internal Server Error | isInternalServerError() | HTTP 응답코드가 500 InternalServerError검증 |
-| 5**                       | is5xxClientError()      | HTTP 응답코드가 5** 검증                    |
-- HTTP 응답 코드 
-- **1xx : Information(정보제공) : 클라이언트 요청을 받았으며 작업을 계속 진행중
-- **2xx : Success(성공) : 클라이언트가 요청한  동작 수신 이해했고 승낙하여 성공적으로 처리함
-- 200 Ok : 성공 : 서버가 요청을 성공적으로 처리하였음
-- 201 Created : 생성됨 : 요청이 처리되어 새로운 리소스가 생성됨
-- 202 Accepted : 허용됨 : 요청은 접수하였지만 처리가 완료되지 않음
-- **3xx : Redirection(리다이렉션) : 클라이언트는 요청을 마치기 위해 추가 동작을 취해야함 
-- 301 Moved Permanentyl : 영구 이동 : 지정한 리소스가 새로운 URL로 이동하였음
-- 303 See Other : 다른 위치 보기 : 다른 위치로 요청하라 
-- 307 Temporary Redirect : 임시 리다이렉션 : 임시로 리다이렉션 요청이 필요하다
-- **4xx : Client Error(클라이언트 에러) : 클라이언트 요청에 오류가 있음
-- 400 Bad Request : 잘못된 요청 : 요청의 구문이 잘못되었다
-- 401 Unauthorized : 권한 없음 : 지정한  리소스에 대한 엑세스 권한이 없음
-- 403 Forbidden : 금지됨 : 지정한 리소스에 대한 엑세스가 금지되었음
-- 404 Not Found : 찾을 수 없음 : 지정한 리소스를 찾을 수 없음
-- **5xx : Server Error(서버 에러) : 클라이언트의 요청은 유효한데 서버가 처리에 실패함
-- 500 : Internal Server Error : 내부 서버 에러 : 서버에 에러가 발생함 
-- 501 : Not Implemented : 구현되지 않음 : 요청한 URI의 메소드에 대해 서버가 구현하고 있지 않음
-- 502 : Bad Gateway : 불량 게이트 웨이 : 게이트웨이 또는 프록시 역할을 하는 서버가 그 뒷단의 서버로부터 잘못된 응답을 받았음
