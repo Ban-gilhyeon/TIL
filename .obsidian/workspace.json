@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
+                "file": "실용주의 프로그래밍/제 3부 테스트.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "제 2부 스프링과 객체지향 설계"
+              "title": "제 3부 테스트"
             }
           }
         ]
@@ -164,6 +164,9 @@
   },
   "active": "61464bc44f3a7f0a",
   "lastOpenFiles": [
+    "Spring/Spring Test 이론 및 용어.md",
+    "Spring/Spring Test 인프런.md",
+    "Spring/Spring Test JUnit 5.md",
     "실용주의 프로그래밍/제 3부 테스트.md",
     "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
     "실용주의 프로그래밍/제 1부 객체지향.md",
@@ -172,7 +175,6 @@
     "Pasted image 20241022094627.png",
     "Pasted image 20241022092932.png",
     "Pasted image 20241022092913.png",
-    "Spring/Spring Test JUnit 5.md",
     "Spring/@Embedded 와 @embeddable.md",
     "Spring/모르는 어노테이션, 클래스.md",
     "Spring/빌더 패턴과 정적 팩토리 메소드.md",
@@ -188,12 +190,10 @@
     "CS/Web.md",
     "CS/URI 와 URL.md",
     "Spring/Spring 기본 개념.md",
-    "Spring/Spring Test 이론 및 용어.md",
     "Spring/images/Pasted image 20241021031531.png",
     "Spring/images/Pasted image 20241021030834.png",
     "Spring/images/Pasted image 20241021021234.png",
     "Spring/Spring.md",
-    "Spring/Spring Test 인프런.md",
     "공부해야 될 것들.md.md",
     "Kotlin/추상 클래스와 인터페이스.md",
     "Kotlin",
