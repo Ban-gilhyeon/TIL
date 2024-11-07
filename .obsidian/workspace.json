@@ -8,29 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "61464bc44f3a7f0a",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "실용주의 프로그래밍/images/Pasted image 20241028173701.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241028173701"
-            }
-          },
-          {
             "id": "49ffd7ebccd5fbaa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "실용주의 프로그래밍/제 4부 부록.md",
+                "file": "project/2차 프로젝트 트러블 슈팅.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "제 4부 부록"
+              "title": "2차 프로젝트 트러블 슈팅"
+            }
+          },
+          {
+            "id": "72387277065f4b3e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20241022094627.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20241022094627"
             }
           }
         ],
@@ -175,19 +175,28 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "49ffd7ebccd5fbaa",
+  "active": "72387277065f4b3e",
   "lastOpenFiles": [
+    "Pasted image 20241022092932.png",
+    "Pasted image 20241022092913.png",
+    "Pasted image 20241022094627.png",
+    "project/images/Pasted image 20241031100350.png",
+    "project/images/Pasted image 20241031100838.png",
+    "프로젝트에 적용해볼 것들.md",
+    "특강.md",
+    "project/트러블 슈팅.md",
+    "project/2차 프로젝트 트러블 슈팅.md",
+    "project/2차 프로젝트 지원님 자료.md",
+    "project/1차 프로젝트 클론 코딩 트러블 슈팅.md",
+    "project/images/Pasted image 20241031100307.png",
+    "공부해야 될 것들.md.md",
     "실용주의 프로그래밍/images/Pasted image 20241028173701.png",
+    "project/2차 프로젝트  공부한 내용.md",
+    "실용주의 프로그래밍/제 4부 부록.md",
     "실용주의 프로그래밍/images/Pasted image 20241028173759.png",
     "실용주의 프로그래밍/images",
     "실용주의 프로그래밍/images/Pasted image 20241028174324.png",
     "실용주의 프로그래밍/images/Pasted image 20241028174311.png",
-    "실용주의 프로그래밍/images/Pasted image 20241028174110.png",
-    "실용주의 프로그래밍/images/Pasted image 20241028173801.png",
-    "Pasted image 20241022094627.png",
-    "Pasted image 20241022092932.png",
-    "Pasted image 20241022092913.png",
-    "실용주의 프로그래밍/제 4부 부록.md",
     "실용주의 프로그래밍/제 3부 테스트.md",
     "Spring/Spring Test 이론 및 용어.md",
     "Spring/Spring Test 인프런.md",
@@ -195,7 +204,6 @@
     "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
     "Spring/Spring Test JUnit 5.md",
     "Spring/Spring Test Mockito.md",
-    "특강.md",
     "Spring/@Embedded 와 @embeddable.md",
     "Spring/모르는 어노테이션, 클래스.md",
     "Spring/빌더 패턴과 정적 팩토리 메소드.md",
@@ -204,18 +212,10 @@
     "Spring/JPA- Entity Mapping.md",
     "Spring/JPA-JpaRepository, CrudRepositroy.md",
     "Spring/JPA.md",
-    "Spring/images/Pasted image 20241021011830.png",
     "CS/Web.md",
-    "CS/URI 와 URL.md",
-    "Spring/Spring 기본 개념.md",
-    "Spring/Spring.md",
-    "공부해야 될 것들.md.md",
-    "Kotlin/추상 클래스와 인터페이스.md",
     "Kotlin",
-    "Spring/무제 파일 1.md",
     "실용주의 프로그래밍/1부 객체지향",
     "실용주의 프로그래밍",
-    "project/2차 프로젝트 지원님 자료.md",
     "DB/images",
     "DB",
     "CS/images"
