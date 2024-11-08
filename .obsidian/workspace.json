@@ -11,30 +11,13 @@
             "id": "49ffd7ebccd5fbaa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/2차 프로젝트 트러블 슈팅.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2차 프로젝트 트러블 슈팅"
-            }
-          },
-          {
-            "id": "72387277065f4b3e",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20241022094627.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241022094627"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -175,11 +158,21 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "72387277065f4b3e",
+  "active": "49ffd7ebccd5fbaa",
   "lastOpenFiles": [
+    "Architecture/MSA(Micro Service Architecture).md",
+    "Pasted image 20241108172245.png",
+    "Pasted image 20241108171131.png",
+    "Pasted image 20241108113352.png",
+    "Architecture/images/Pasted image 20241108103107.png",
+    "Architecture/멀티모듈.md",
+    "Architecture/images/Pasted image 20241108102141.png",
+    "Architecture/images",
+    "Architecture/무제 파일.md",
+    "Pasted image 20241022094627.png",
+    "Architecture",
     "Pasted image 20241022092932.png",
     "Pasted image 20241022092913.png",
-    "Pasted image 20241022094627.png",
     "project/images/Pasted image 20241031100350.png",
     "project/images/Pasted image 20241031100838.png",
     "프로젝트에 적용해볼 것들.md",
@@ -188,15 +181,10 @@
     "project/2차 프로젝트 트러블 슈팅.md",
     "project/2차 프로젝트 지원님 자료.md",
     "project/1차 프로젝트 클론 코딩 트러블 슈팅.md",
-    "project/images/Pasted image 20241031100307.png",
     "공부해야 될 것들.md.md",
-    "실용주의 프로그래밍/images/Pasted image 20241028173701.png",
     "project/2차 프로젝트  공부한 내용.md",
     "실용주의 프로그래밍/제 4부 부록.md",
-    "실용주의 프로그래밍/images/Pasted image 20241028173759.png",
     "실용주의 프로그래밍/images",
-    "실용주의 프로그래밍/images/Pasted image 20241028174324.png",
-    "실용주의 프로그래밍/images/Pasted image 20241028174311.png",
     "실용주의 프로그래밍/제 3부 테스트.md",
     "Spring/Spring Test 이론 및 용어.md",
     "Spring/Spring Test 인프런.md",
@@ -210,9 +198,6 @@
     "Spring/헥사고날 아키텍처.md",
     "Spring/IoC, DI, DL.md",
     "Spring/JPA- Entity Mapping.md",
-    "Spring/JPA-JpaRepository, CrudRepositroy.md",
-    "Spring/JPA.md",
-    "CS/Web.md",
     "Kotlin",
     "실용주의 프로그래밍/1부 객체지향",
     "실용주의 프로그래밍",
