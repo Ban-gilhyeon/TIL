@@ -84,7 +84,7 @@
 	- 변경된 서비스 요청에 따라 사용자 요청 처리 (동적 처리)
 - 장애 격리 
 	- 특정 서비스에 오류가 발생해도 다른 서비스에 영향 주지 않음
-### CI/CD
+## CI/CD
 - 지속적인 통합, CI(Continuous integration)
 	- 통합 서버, 소스 관리(SCM), 빌드 도구, 테스트 도구
 	- ex ) jenkins, Team CI, Travis CI
@@ -92,7 +92,7 @@
 	- Continuous Delivery
 	- Continuous Deployment
 	- Pipe Line
-### DevOps
+## DevOps
 개발 조직 + 운영 + QA 
 ![[Pasted image 20241108171131.png]]
 - 전체 개발 일정이 완료 될 때까지 지속적으로 진행
@@ -100,7 +100,7 @@
 	- 피드백
 	- CI
 	- CD
-### Container 가상화
+## Container 가상화
 ![[Pasted image 20241108172245.png]]
 - Virtualized Deployment
 	- Hypervisor 기술을 통해 가상머신을 가질 수 있음 
@@ -110,4 +110,77 @@
 	- 컨테이너의 라이브러리나 리소스를 공유하여 사용 
 	- 적은 리소스 사용 가능 
 	- 컨테이너 가상화 위에 돌아가는 서비스는 가볍고 빠르게 사용할 수 있음 
+
+## 개발 방식의 차이
+
+![[Pasted image 20241111104116.png]]
+- MSA 방식은 서비스별로 각각 DB가 있을 수도 있음 
+- 마이크로 서비스 별로 배포가 가능
+
+## MicroService의 특징
+1) Multiple Rates of Change
+2) Independent Life Cycles
+3) Independent Scalability
+4) Isolated Failure
+5) Simplify Interactions with External Dependencies
+6) Polygolt Technology
+
+SOA(서비스 지향 아키텍처)와 MSA의 차이점
+- SOA 
+	-  재사용을 통한 비용 절감
+	- 공통의 서비스를 ESB(서비스 버스)모아 사업 측면에서 공통 서비스 형식으로 서비스 제공
+	- 서비스 공유 최대화
+- MSA 
+	- 서비스 간의 결합도를 낮추어 변화에 능동적으로 대응
+	- 각 독립된 서비스가 노출된 REST API를 사용
+	- 서비스 공유 최소화
+![[Pasted image 20241111113136.png]]
+
+## Restful API
+0) 기존의 리소스를 단순하게 웹 서비스 상태로 제공하기 위해 URL만 맵핑
+1) 적절한 패턴으로 작성, 적절한 HTTP 메소드 X 
+	1) 단순하게 `get` `post` 메소드만을 사용
+	2) 성공 시 단순히 200 ok만을 출력
+2) 레벨 1 + HTTP 메소드 (리소스의 상태를 구분)
+	1) 제공하려는 리소스를 메소드에 맞게 제공
+	2) 단순 읽기는 `get`
+	3) 새로운 리소스를 추가할 때는 `post`
+	4) 기존의 리소스를 수정할 때는 `put`
+	5) 기존의 리소스를 삭제할 떄는 `delete`
+3) 레벨 2 + HATEOAS
+	1) DATA와 다음 단계에서 어떤 작업을 수행할 수 있는지까지 제공
+
+추가적으로 고려해야 될 사항
+- Consumer first
+	- 개발자 입장에서보다 사용자 입장에서 명료하고 직관적인 API
+	- 사용자 뿐만 아니라 다른 개발자(API 사용하고 있는)들 포함
+- Make best use of HTTP
+	- 타입 헤더값과 같은 HTTP의 장점을 최대한 살리기
+- Request methods
+	- GET : Read 
+	- POST : Create
+	- PUT : Update
+	- DELETE : delete
+- Response Status
+	- 적절한 상태코드가 전달되어야 함 성공했다면 왜 성공했는지도 포함되어야 함
+	- 200
+	- 404
+	- 400
+	- 201
+	- 401
+- No secure info in URL
+- Use plurals
+	- 복수형태의 URI 값을 사용할 것
+	- prefer / users to / user
+	- 가능한 명사 형태로 사용할 것 
+	- prefer / users / 1 to /user 1
+- User nouns for resources
+- For exceptopns
+	- define a consistent approach
+	- 일관적인 엔드 포인트를 사용할 것 
+	- /search 
+	- / PUT /gists/{id}/star
+	- DELETE / gists / {id} / star
+
+
 
