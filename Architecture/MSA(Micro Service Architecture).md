@@ -183,4 +183,63 @@ SOA(서비스 지향 아키텍처)와 MSA의 차이점
 	- DELETE / gists / {id} / star
 
 
+## API Gateway Service
+![[Pasted image 20241113122327.png]]
+- 인증 및 권한 부여
+- 서비스 검색 통합
+- 응답 캐싱
+- 정책, 회로 차단기 및 `QoS` 다시 시도
+- 속도 제한, 분하 분산
+- 로깅 , 추적, 상관 관계
+- 헤더, 쿼리 문자열 및 청구 변환
+- IP호용 목록에 추가
+### Spring Cloud에서의 MSA간 통신
+-  RestTemplate
+	```java
+	RestTemplate restTemplate = new RestTemplate();
+		restTemplate.getForObject("http://localhost:8080/",User.class,200);
+	```
+-  Feign Client
+```java
+@FeignClient("stores")
+public interface StroreClient{
+	@RequestMapping(method = RequestMethod.GET, value ="/stores")
+	List<Store> getStores();
+}
+```
 
+### Spring Cloud gateway
+(Reactive Gateway : 그냥 gateway 추가하면 mvc-gateway라 강의와 달랐음)
+- gateway의 역할
+	- 요청이 들어오면 해당하는 micro-service에 Mapping 시켜줌
+		- yml 파일에서 아래와 같이 설정 가능
+		```yml
+spring:  
+  application:  
+    name: apigateway-service  
+  cloud:  
+    gateway:  # routing 설정 부문
+      routes:  
+        - id: first_service  
+          uri: http://localhost:8081/  
+          predicates:  
+            - Path=/first_service/**  
+          filters:  
+            - AddRequestHeader=first_request, first_requests_header2  
+            - AddResponseHeader=first_response, first_response_header2
+
+			```
+
+		- filterConfig.java 파일을 통해서 설정가능
+		```java
+//@Configuration  
+public class FilterConfig {  
+    //@Bean  
+    public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {  
+       return builder.routes() // yml에 있는 cloud: routes: 내용과 동일한 내용임  
+             .route(r -> r.path("/first_service/**")  
+                   .filters(f -> f.addRequestHeader("first_request","first_request_header")  
+                         .addResponseHeader("first_response","first_response_header"))  
+                   .uri("http://localhost:8081"))
+		```
+		- CustomFilter.java 파일을 통해서 설정 가능

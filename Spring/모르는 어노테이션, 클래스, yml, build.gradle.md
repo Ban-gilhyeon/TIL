@@ -58,3 +58,7 @@ public class ResponseEntity<t> extends HttpEntity<T>
 	- required : false인 경우 MultipartFile이 필수가 아니며, 없어도 됨
 	- getOriginalFilename() : File 원본 이름을 추출할 수 있음
 	- 요청 받은 MulitpartFile이 존재하는 경우 확인하려면 `isEmpty()`를 활용해 File의 존재 여부를 확인할 수 있음
+
+## yml 
+- open-in-view
+	- JPA에서 영속성 컨텍스트가 데이터베이스 커넥션을 DB에 언제 돌려줄지 설정
