@@ -191,3 +191,13 @@ spring:
 - 위와 같이 `_`를 `-`으로 수정하면 해결 가능..! 
 - 왜일까?
 	- Eureka는 기본적으로 **서비스 ID를 대문자로 변환**하며, **RFC 1123 호환 규칙**을 따릅니다. 이 규칙에 따르면, **서비스 이름은 알파벳, 숫자, 하이픈(`-`), 마침표(`.`)만 허용**되며, 언더스코어(`_`)는 허용되지 않습니다.
+
+## Application.yml 인식을 못하는 문제
+- 문제 : 
+	- server: port: 0으로 설정 
+		- 8080으로 고정된 ip를 사용
+	- greeting : message : welcome 
+		- log를 확인한 결과 `null` 출력 
+- 해결 : 
+	- 여러 mirco service를 사용하다보니 `application.yml`의 이름을 `application{-micro-service}`으로 바꿈 
+	-  Spring Boot가 **기본적으로 `application.yml` 또는 `application.properties`만 자동으로 로드**

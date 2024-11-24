@@ -193,7 +193,12 @@ SOA(서비스 지향 아키텍처)와 MSA의 차이점
 - 로깅 , 추적, 상관 관계
 - 헤더, 쿼리 문자열 및 청구 변환
 - IP호용 목록에 추가
+
+### Spring Cloud Bus?
+
 ### Spring Cloud에서의 MSA간 통신
+MSA간 통신은 `동기` 방식과 `비동기`방식이 존재함 
+
 -  RestTemplate
 	```java
 	RestTemplate restTemplate = new RestTemplate();

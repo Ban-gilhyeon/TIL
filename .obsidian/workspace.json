@@ -8,20 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "977477546c6834ff",
+            "id": "16e722ad3d24277b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spring/Swagger.md",
+                "file": "Architecture/MSA(Micro Service Architecture).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swagger"
+              "title": "MSA(Micro Service Architecture)"
+            }
+          },
+          {
+            "id": "6880f233967198fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spring/ModelMapper.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ModelMapper"
+            }
+          },
+          {
+            "id": "c43ac34552f34ad6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/개인프로젝트_MSA 인프런 트러블 슈팅.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "개인프로젝트_MSA 인프런 트러블 슈팅"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,46 +191,46 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "977477546c6834ff",
+  "active": "c43ac34552f34ad6",
   "lastOpenFiles": [
+    "project/2차 프로젝트 트러블 슈팅.md",
+    "Architecture/MSA(Micro Service Architecture).md",
+    "project/개인프로젝트_MSA 인프런 트러블 슈팅.md",
+    "Spring/Spring Security.md",
+    "Spring/ModelMapper.md",
+    "Spring/@Embedded 와 @embeddable.md",
+    "Spring/빌더 패턴과 정적 팩토리 메소드.md",
+    "Spring/모르는 어노테이션, 클래스, yml, build.gradle.md",
+    "project/3차프로젝트 241122 멘토 피드백.md",
+    "project/images/Pasted image 20241122153132.png",
+    "project/images/Pasted image 20241117201404.png",
     "포트폴리오 버킷리스트.md",
+    "project/images/Pasted image 20241117201618.png",
+    "project/최종 프로젝트 (어데고) 트러블 슈팅.md",
+    "Architecture/헥사고날 아키텍처.md",
+    "Architecture/아키텍처.md",
+    "project/개인 프로젝트_데브코스 2차 프로젝트 스터디.md",
     "Spring/Swagger.md",
     "공부해야 될 것들.md.md",
     "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
     "실용주의 프로그래밍/제 1부 객체지향.md",
     "실용주의 프로그래밍/실용주의 프로그래밍.md",
     "실용주의 프로그래밍/제 4부 부록.md",
-    "project/개인프로젝트_MSA 인프런 트러블 슈팅.md",
-    "Pasted image 20241117201618.png",
-    "Pasted image 20241117201404.png",
     "project/images/Pasted image 20241115085854.png",
     "Architecture/images/Pasted image 20241115085926.png",
     "project/images/Pasted image 20241114025318.png",
-    "Architecture/MSA(Micro Service Architecture).md",
-    "Spring/@Embedded 와 @embeddable.md",
-    "Architecture/아키텍처.md",
-    "Architecture/헥사고날 아키텍처.md",
     "Spring/Spring.md",
     "JAVA/JAVA.md",
     "Kotlin/추상 클래스와 인터페이스.md",
     "DB/DB.md",
     "DB/Index.md",
     "project/트러블 슈팅.md",
-    "CS/CS.md",
-    "CS/무제 파일.md",
-    "CS/작성할 것!! 동기식, 비동기식 & Blocking, Non-Blocking.md",
     "CS/images/Pasted image 20241114024615.png",
     "CS/images/Pasted image 20240921085428.png",
     "CS/images/Pasted image 20240921084727.png",
-    "Spring/모르는 어노테이션, 클래스, yml, build.gradle.md",
     "project/images/Pasted image 20241113161333.png",
-    "project/images/Pasted image 20241113161244.png",
-    "무제 파일.md",
     "특강/images",
     "특강",
-    "CS/Tomcat과 Netty의 차이.md",
-    "실용주의 프로그래밍/제 3부 테스트.md",
-    "project/개인 프로젝트_데브코스 2차 프로젝트 스터디.md",
     "Architecture/images",
     "Architecture",
     "실용주의 프로그래밍/images",
