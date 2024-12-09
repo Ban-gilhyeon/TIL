@@ -280,3 +280,25 @@ public class CustomFilter extends AbstractGatewayFilterFactory<CustomFilter.Conf
 ![[Pasted image 20241115085854.png]]
 - 실행 순서
 - ![[Pasted image 20241115085926.png]]
+
+## MS 분산 추적
+
+### Zipkin
+- Timing 데이터 수집, 추적 시스템
+- 분산 환경에서의 시스템 병목 현상 파악
+- Collector, Query Service, Database, Web  UI로 구성
+- Span 
+	- 하나의 요청에 사용되는 작업의 단위
+	- 64 bit unique ID
+- Trace 
+	- 트리 구조로 이뤄진 Span 셋
+	- 하나의 요청에 대한  같은 Trace ID 발급 
+### Spring Cloud Sleuth 
+- 스프링 부트 application을 zipkin과 연동 
+- 요청 값에 따른 TraceID, Span ID 부여
+- Trace와 Span Ids를 로그에 추가 가능
+	- servlet filter
+	- rest template
+	- scheduled actions
+	- message channls
+	- feign client
