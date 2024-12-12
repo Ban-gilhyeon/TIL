@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/최종 프로젝트 (어데고) 트러블 슈팅.md",
+                "file": "project/최종프로젝트 멘토 피드백.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "최종 프로젝트 (어데고) 트러블 슈팅"
+              "title": "최종프로젝트 멘토 피드백"
             }
           }
         ],
@@ -179,18 +179,20 @@
   },
   "active": "c43ac34552f34ad6",
   "lastOpenFiles": [
-    "Architecture/MSA(Micro Service Architecture).md",
-    "Spring/ModelMapper.md",
-    "project/최종 프로젝트 (어데고) 트러블 슈팅.md",
-    "project/개인 프로젝트_데브코스 2차 프로젝트 스터디.md",
     "포트폴리오 버킷리스트.md",
-    "project/2차 프로젝트 지원님 자료.md",
-    "project/2차 프로젝트 트러블 슈팅.md",
-    "project/3차프로젝트 멘토 피드백.md",
+    "project/1차 프로젝트 클론 코딩 트러블 슈팅.md",
     "공부해야 될 것들.md.md",
+    "project/최종프로젝트 멘토 피드백.md",
     "project/어데고 프로젝트 중 공부한 내용 및 플로우.md",
+    "project/우테코 프리코스 1 주차 - 숫자야구.md",
+    "project/최종 프로젝트 (어데고) 트러블 슈팅.md",
     "project/트러블 슈팅.md",
     "project/개인프로젝트_MSA 인프런 트러블 슈팅.md",
+    "Architecture/MSA(Micro Service Architecture).md",
+    "Spring/ModelMapper.md",
+    "project/개인 프로젝트_데브코스 2차 프로젝트 스터디.md",
+    "project/2차 프로젝트 지원님 자료.md",
+    "project/2차 프로젝트 트러블 슈팅.md",
     "Spring/Spring Security.md",
     "Spring/@Embedded 와 @embeddable.md",
     "Spring/빌더 패턴과 정적 팩토리 메소드.md",
@@ -209,8 +211,6 @@
     "Architecture/images/Pasted image 20241115085926.png",
     "project/images/Pasted image 20241114025318.png",
     "Spring/Spring.md",
-    "JAVA/JAVA.md",
-    "Kotlin/추상 클래스와 인터페이스.md",
     "CS/images/Pasted image 20241114024615.png",
     "CS/images/Pasted image 20240921085428.png",
     "CS/images/Pasted image 20240921084727.png",
