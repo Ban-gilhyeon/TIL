@@ -9,7 +9,8 @@
 5) Password encode를 위한 BCryptPasswordEncoder 빈 정의
 6) Authorization -> configure(HttpSecurity http) 메서드 재정의 
 
-## UserDetailsServ
+## UserDetailsService
 ice 
 Spring Security에서 사용자의 정보를 담는 인터페이스 
+
 
