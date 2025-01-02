@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "16e722ad3d24277b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Architecture/MSA(Micro Service Architecture).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MSA(Micro Service Architecture)"
-            }
-          },
-          {
             "id": "c43ac34552f34ad6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "실용주의 프로그래밍/제 1부 객체지향.md",
+                "file": "실전 카프카 개발부터 운영까지/3장.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "제 1부 객체지향"
+              "title": "3장"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 255.5
+    "width": 255.5,
+    "collapsed": true
   },
   "right": {
     "id": "d3e18f2c4ace486e",
@@ -179,14 +165,29 @@
   },
   "active": "c43ac34552f34ad6",
   "lastOpenFiles": [
-    "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
+    "Pasted image 20250103010113.png",
+    "실전 카프카 개발부터 운영까지/image/Pasted image 20250103005529.png",
+    "실전 카프카 개발부터 운영까지/image/Pasted image 20250103005232.png",
+    "실전 카프카 개발부터 운영까지/image",
+    "실전 카프카 개발부터 운영까지/image/Pasted image 20250103002150.png",
+    "CS/OAuth2.0.md",
+    "실전 카프카 개발부터 운영까지/3장.md",
+    "실전 카프카 개발부터 운영까지.md",
+    "실전 카프카 개발부터 운영까지",
+    "CS/images/Pasted image 20241224115206.png",
+    "CS/images/Pasted image 20241224114929.png",
+    "CS/images/Pasted image 20241224111943.png",
+    "CS/images/Pasted image 20241224110033.png",
+    "Spring/images/Pasted image 20241217075926.png",
+    "CS/작성할 것!! 동기식, 비동기식 & Blocking, Non-Blocking.md",
+    "Spring/Spring Security.md",
     "실용주의 프로그래밍/제 1부 객체지향.md",
+    "실용주의 프로그래밍/제 2부 스프링과 객체지향 설계.md",
     "실용주의 프로그래밍/실용주의 프로그래밍.md",
     "project/최종 프로젝트 (어데고) 트러블 슈팅.md",
     "Architecture/MSA(Micro Service Architecture).md",
     "Spring/Spring MVC구조와 기본 동작 순서.md",
     "Spring/Spring_framework.md",
-    "Pasted image 20241217075926.png",
     "Spring/images/Pasted image 20241216135736.png",
     "특강/images/Pasted image 20241216144834.png",
     "Spring/Spring.md",
@@ -194,7 +195,6 @@
     "특강/특강.md",
     "특강/데브패스.md",
     "Spring/Spring 기본 개념.md",
-    "Spring/Spring Security.md",
     "project/최종프로젝트 멘토 피드백.md",
     "포트폴리오 버킷리스트.md",
     "project/1차 프로젝트 클론 코딩 트러블 슈팅.md",
@@ -203,18 +203,6 @@
     "project/우테코 프리코스 1 주차 - 숫자야구.md",
     "project/트러블 슈팅.md",
     "project/개인프로젝트_MSA 인프런 트러블 슈팅.md",
-    "Spring/ModelMapper.md",
-    "project/개인 프로젝트_데브코스 2차 프로젝트 스터디.md",
-    "project/2차 프로젝트 지원님 자료.md",
-    "project/2차 프로젝트 트러블 슈팅.md",
-    "Spring/@Embedded 와 @embeddable.md",
-    "project/images/Pasted image 20241122153132.png",
-    "project/images/Pasted image 20241117201404.png",
-    "project/images/Pasted image 20241117201618.png",
-    "project/images/Pasted image 20241115085854.png",
-    "Architecture/images/Pasted image 20241115085926.png",
-    "project/images/Pasted image 20241114025318.png",
-    "CS/images/Pasted image 20241114024615.png",
     "특강/images",
     "특강",
     "Architecture/images",
@@ -222,8 +210,6 @@
     "실용주의 프로그래밍/images",
     "Kotlin",
     "실용주의 프로그래밍/1부 객체지향",
-    "실용주의 프로그래밍",
-    "DB/images",
-    "DB"
+    "실용주의 프로그래밍"
   ]
 }
