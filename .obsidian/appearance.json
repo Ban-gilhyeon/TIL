@@ -2,7 +2,7 @@
   "accentColor": "#238500",
   "theme": "obsidian",
   "interfaceFontFamily": "RIDIBatang",
-  "textFontFamily": "RIDIBatang",
-  "monospaceFontFamily": "D2Coding",
-  "cssTheme": "Atom"
+  "textFontFamily": "D2Coding,RIDIBatang",
+  "monospaceFontFamily": "D2Coding,RIDIBatang",
+  "cssTheme": "Obsidianite"
 }
