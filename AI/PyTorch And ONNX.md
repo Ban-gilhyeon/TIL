@@ -104,3 +104,6 @@ Spring Controller에서 클라이언트의 HTTP 요청을 받아 Service를 호�
 
 예를 들어, 클라이언트가 특정 문장을 전송하면 Controller가 이 문장을 Service로 전달하고, Service는 ONNX 모델을 통해 추론한 결과(예: 각 클래스별 확률 또는 이진 예측)를 반환합니다.
 ```
+
+
+ㄴ
