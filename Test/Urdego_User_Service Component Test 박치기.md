@@ -32,7 +32,7 @@ public User signUp(UserSignUpRequest userSignUpRequest) {
 ### given에 해당하는 테스트 준비는 아래와 같음
 ```java
 //given  
-UserSignUpRequest request = new UserSignUpRequest("nickanme","email@email.com","KAKAO","1");  
+UserSignUpRequest request = new UserSignUpRequest("nickname","email@email.com","KAKAO","1");  
 List<User> userList = List.of(mock(User.class), mock(User.class));  
   
 //1. 중복된 닉네임이 몇개 있는지 체크  
@@ -40,13 +40,14 @@ when(userReader.findByName(request.nickname())).thenReturn(userList);
 int nicknameNumber = userList.size() + 1;  
   
 //2. 유저 생성  
-User mockUser = mock(User.class);  
+User dummyUser = User.create(request,nicknameNumber);  
   
 //3. 캐릭터 초기화 (기본 캐릭터 지급)  
 //여기서 분기가 등장 최초 가입 시 or 탈퇴 후 재 로그인 시  
 //현재는 최초 가입 시로 가정  
-UserCharacter mockUserCharacter = mock(UserCharacter.class);  
-when(userCharacterCommander.initActiveCharacter(mockUser)).thenReturn(mockUserCharacter);
+GameCharacter dummyGameCharacter = new GameCharacter("dummyGameCharacter");  
+UserCharacter dummyUserCharacter = new UserCharacter(dummyUser,dummyGameCharacter);  
+when(userCharacterCommander.initActiveCharacter(any(User.class))).thenReturn(dummyUserCharacter);
 ```
 
 위에서 기술한 바와 같이 `signUp()`는 신규 `User`객체를 저장하는 메서드 고로 
@@ -93,5 +94,36 @@ private int countDuplicatedNickname(String nickname){
 `assertEquals(nickname#3, result.getNickname());`로 확인할 수 있음 
 
 ![[Pasted image 20250409032744.png]]
+### then 
+```java
+//then  
+//5 검증 및 확인  
+User result = userCommander.signUp(request);  
+  
+//5.1 중복된 닉네임이 몇개 있는지 체크  
+//검증  
+verify(userReader).findByName(request.nickname());  
+//확인  
+assertEquals("nickname#3",result.getNickname());  
+  
+//5.2 유저 생성  
+//검증  
+verify(userRepository,times(1)).save(any(User.class));  
+//확인  
+assertEquals(dummyUser.getNickname(), result.getNickname());  
+assertEquals(dummyUser.getEmail(), result.getEmail());  
+  
+//5.3 캐릭터 초기화 (기본 캐릭터 지급)  
+//검증, 확인  
+verify(userCharacterCommander).initActiveCharacter(any(User.class));  
+  
+//5.4 상태 저장  
+//검증  
+verify(userRepository,times(1)).save(any(User.class));  
+verify(userCharacterRepository,times(1)).save(any(UserCharacter.class));  
+//확인  
+assertEquals(dummyUser.getNickname(), result.getNickname());  
+assertEquals(dummyUser.getEmail(), result.getEmail());
+```
 
 
