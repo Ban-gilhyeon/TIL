@@ -4,5 +4,6 @@
   "interfaceFontFamily": "RIDIBatang",
   "textFontFamily": "RIDIBatang,D2Coding",
   "monospaceFontFamily": "D2Coding,RIDIBatang",
-  "cssTheme": "Notation 2"
+  "cssTheme": "Obsidianite",
+  "baseFontSize": 18
 }
