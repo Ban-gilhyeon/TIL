@@ -112,6 +112,26 @@ Tomcat과 Netty는 서로 완전히 다른 것을 알아볼 수 있었지만 여
 
 ![[Pasted image 20250824014358.png]]
 
+### Gateway Server는 왜 Netty지? 
+	사실 Netty에 대해 궁금하다는 생각이 든 이유는 
+	`어데고?!` 프로젝트 당시 Gateway Server를 만들기 위해 우연히 Spring WebFlux를 사용해서 만든 적이 있다. 
+	그 때 인프런의 강의를 보며 MSA에 대해 공부하고 있었는데 Netty로 돌아가야 한다라는 말을 들은 적이 있다. 
+	
+	근데 생각해보니 Gateway는 왜 Netty로 돌아가야할까? 전체적인 서비르는 전부 Tomcat으로 돌아가는데..? 
 
+그 이유는 아래와 같다. 
+- 엔터프라이즈 급의 서비스에서 MSA를 대부분 도입하기 마련인데 이 때 엄청 많은 클라이언트 요청을 받아서 백엔드로 프록시/라우팅하는 역할
+- 대부분 I/O 중심 작업 (들어온 요청 -> 다른 서버로 전달 -> 응답 받다 다시 돌려주기)이고, 비즈니스 로직은 얇음
+- 블로킹 스레드 모델(Tomcat)보다 Netty가 훨씬 효율적
+- Netty 덕분에 수만가지 동시 연결도 적은 스레도로 처리 가능 -> 게이트웨이 성능 Up
+
+	근데 내가 궁금한건 webFlux를 이용해서 Netty가 돌아가는건 맞는데 단순 게이트웨이면 네트워크 프레임워크를 사용한 Netty의 특성을 반밖에 못쓰는거 아냐? 비동기 단순 논블로킹이라 빠르니까 쓰는거라는거면
+	이라는 생각이 들었다
+	
+
+![[Pasted image 20250825032958.png]]
+![[Pasted image 20250825033009.png]]
+
+라는 답변.... 흠 WebFlux에 대해 공부를 해봐야할 것 같다.
 
 출처 : https://medium.com/%40gourav20056/spring-webflux-internals-how-nettys-event-loop-threads-power-reactive-apps-4698c144ef68
