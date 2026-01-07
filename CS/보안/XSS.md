@@ -1,0 +1,2 @@
+Cross-Site Scripting는 공격자가 악성 스크립트를 합법적인 웹사이트에 삽입하여 사용자의 브라우저에서 실행되도록 하는 웹 보안 취약점
+이를 통해 사용자 정보 탈취, 세션 하이재킹, 웹사이트 변조 등의 공격이 가능합니다. 주요 유형으로는 저장(Stored), 반사(Reflected), DOM 기반(DOM-based) XSS가 있으며, 입력값 검증 미흡으로 발생하며 OWASP(Open Web Application Security Project)에서 주요 웹 보안 위험 요소로 꼽습니다.

@@ -5,7 +5,7 @@
 #### Function이란? 
 크게 두가지로 볼 수 있음 C언어의 입장에서 Function과 JAVA의 입장에서 Function 
 - C언어 : 함수라고 부르는 main함수를 제외한 다른 함수 {} 블럭과 블럭 사이의 그거! 
-``` 
+```
 int add(int a, int b){
     return a + b; 
 }
