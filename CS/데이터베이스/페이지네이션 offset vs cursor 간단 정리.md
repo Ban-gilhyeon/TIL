@@ -34,3 +34,4 @@ from post
 where id < 10 # ex) cursor값이 10인 경우
 limit 10;
 ```
+

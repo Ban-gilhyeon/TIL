@@ -5,5 +5,8 @@
   "textFontFamily": "RIDIBatang,D2Coding",
   "monospaceFontFamily": "D2Coding,RIDIBatang",
   "cssTheme": "",
-  "baseFontSize": 18
+  "baseFontSize": 18,
+  "enabledCssSnippets": [
+    "notion-markdown"
+  ]
 }

@@ -1,0 +1,196 @@
+/*
+ * Notion Markdown — Obsidian CSS snippet
+ * Keeps the default Obsidian theme and gently restyles Markdown elements.
+ * Supports Reading View and Live Preview.
+ */
+
+/* Inline code */
+.markdown-rendered :not(pre) > code,
+.markdown-source-view.mod-cm6 .cm-inline-code:not(.cm-formatting) {
+  color: #eb5757;
+  background: rgba(135, 131, 120, 0.15);
+  border: 0;
+  border-radius: 3px;
+  padding: 0.15em 0.35em;
+  font-size: 0.9em;
+}
+
+/* Code blocks */
+.markdown-rendered pre,
+.markdown-source-view.mod-cm6 .HyperMD-codeblock {
+  background: rgba(135, 131, 120, 0.10);
+  border: 1px solid var(--background-modifier-border);
+}
+
+.markdown-rendered pre {
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-begin {
+  border-radius: 5px 5px 0 0;
+  padding-top: 0.65em;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-codeblock-end {
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 0.65em;
+}
+
+/* Headings */
+.markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.markdown-source-view.mod-cm6 :is(.HyperMD-header-1, .HyperMD-header-2, .HyperMD-header-3, .HyperMD-header-4, .HyperMD-header-5, .HyperMD-header-6) {
+  color: var(--text-normal);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.markdown-rendered h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 { font-size: 1.875em; }
+.markdown-rendered h2,
+.markdown-source-view.mod-cm6 .HyperMD-header-2 { font-size: 1.5em; }
+.markdown-rendered h3,
+.markdown-source-view.mod-cm6 .HyperMD-header-3 { font-size: 1.25em; }
+
+/* Bold and italic */
+.markdown-rendered strong,
+.markdown-source-view.mod-cm6 .cm-strong {
+  color: var(--text-normal);
+  font-weight: 650;
+}
+
+.markdown-rendered em,
+.markdown-source-view.mod-cm6 .cm-em {
+  color: var(--text-muted);
+}
+
+/* External and internal links */
+.markdown-rendered a.external-link,
+.markdown-source-view.mod-cm6 .cm-link .cm-underline {
+  color: var(--link-color);
+  text-decoration-color: color-mix(in srgb, var(--link-color) 45%, transparent);
+  text-underline-offset: 2px;
+}
+
+.markdown-rendered .internal-link,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--link-color) 35%, transparent);
+}
+
+.markdown-rendered :is(a.external-link, .internal-link):hover,
+.markdown-source-view.mod-cm6 :is(.cm-link, .cm-hmd-internal-link):hover {
+  background: rgba(135, 131, 120, 0.10);
+}
+
+/* Blockquotes */
+.markdown-rendered blockquote,
+.markdown-source-view.mod-cm6 .HyperMD-quote {
+  color: var(--text-normal);
+  border-left-color: var(--text-normal);
+  background: transparent;
+  font-style: normal;
+}
+
+.markdown-rendered blockquote {
+  border-left-width: 3px;
+  padding: 0.15em 0 0.15em 1em;
+}
+
+/* Highlight */
+.markdown-rendered mark,
+.markdown-source-view.mod-cm6 .cm-highlight {
+  color: var(--text-normal);
+  background: rgba(255, 212, 0, 0.28);
+  border-radius: 2px;
+  padding: 0.05em 0.15em;
+}
+
+/* Horizontal rule */
+.markdown-rendered hr,
+.markdown-source-view.mod-cm6 .HyperMD-hr {
+  border-color: var(--background-modifier-border);
+}
+
+.markdown-rendered hr {
+  border-width: 1px 0 0;
+  margin: 2em 0;
+}
+
+/* Lists */
+.markdown-rendered :is(ul, ol),
+.markdown-source-view.mod-cm6 :is(.HyperMD-list-line, .cm-list-1, .cm-list-2, .cm-list-3) {
+  line-height: 1.65;
+}
+
+.markdown-rendered li::marker,
+.markdown-source-view.mod-cm6 .cm-formatting-list {
+  color: var(--text-muted);
+}
+
+/* Checkboxes and tasks */
+.markdown-rendered input[type="checkbox"],
+.markdown-source-view.mod-cm6 input[type="checkbox"] {
+  border: 1.5px solid var(--text-muted);
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.markdown-rendered input[type="checkbox"]:checked,
+.markdown-source-view.mod-cm6 input[type="checkbox"]:checked {
+  background-color: var(--interactive-accent);
+  border-color: var(--interactive-accent);
+}
+
+.markdown-rendered .task-list-item.is-checked,
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"] {
+  color: var(--text-faint);
+  text-decoration-color: var(--text-faint);
+}
+
+/* Tables */
+.markdown-rendered table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.markdown-rendered :is(th, td) {
+  border: 1px solid var(--background-modifier-border);
+  padding: 0.55em 0.75em;
+}
+
+.markdown-rendered th {
+  color: var(--text-normal);
+  background: rgba(135, 131, 120, 0.10);
+  font-weight: 600;
+  text-align: left;
+}
+
+.markdown-rendered tr:hover td {
+  background: rgba(135, 131, 120, 0.06);
+}
+
+/* Live Preview table editor */
+.markdown-source-view.mod-cm6 .cm-table-widget .table-editor {
+  border-color: var(--background-modifier-border);
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget :is(th, td) {
+  border-color: var(--background-modifier-border);
+  padding: 0.55em 0.75em;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget th {
+  background: rgba(135, 131, 120, 0.10);
+  font-weight: 600;
+}
+
+/* Small screens: keep tables usable without changing the whole layout. */
+@media (max-width: 600px) {
+  .markdown-rendered table {
+    display: block;
+    overflow-x: auto;
+  }
+}
