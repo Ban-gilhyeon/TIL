@@ -67,6 +67,10 @@ temp/
 .obsidian/workspace.json
 .obsidian/plugins/
 
+# 개인 면접 및 기업 코딩테스트 복기
+면접 리뷰/
+기업코테 리뷰/
+
 # 비밀 정보 파일 무시
 .env
 .env.local
